@@ -69,7 +69,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   top: 0;
   z-index: 50;
   display: grid;
-  grid-template-columns: minmax(390px, 1fr) auto minmax(110px, 1fr);
+  grid-template-columns: minmax(max-content, 1fr) auto minmax(max-content, 1fr);
+  column-gap: 24px;
   align-items: center;
   width: 100%;
   padding: 12px clamp(24px, 5vw, 80px);
@@ -153,6 +154,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 nav { display: flex; gap: 34px; color: var(--muted); font-size: 15px; font-weight: 400; }
 nav a:hover, nav a:focus-visible, footer a:hover, footer a:focus-visible { color: var(--purple); }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-self: end;
+}
+
 .header-cta {
   justify-self: end;
   padding: 10px 17px;
@@ -161,6 +169,7 @@ nav a:hover, nav a:focus-visible, footer a:hover, footer a:focus-visible { color
   font-size: 13px;
   font-family: "Barlow", Arial, sans-serif;
   font-weight: 700;
+  white-space: nowrap;
   transition: 0.2s ease;
 }
 .header-cta:hover, .header-cta:focus-visible { background: var(--ink); color: white; }
@@ -495,8 +504,8 @@ footer > a:last-child { justify-self: end; }
 }
 
 @media (max-width: 640px) {
-  .site-header { grid-template-columns: 1fr auto; padding: 15px 20px; }
-  .header-cta { grid-column: 2; }
+  .site-header { grid-template-columns: 1fr auto; row-gap: 12px; padding: 15px 20px; }
+  .header-actions { grid-column: 1 / -1; }
   .brand-lockup { gap: 9px; }
   .personal-brand img { width: 43px; }
   .personal-brand-copy strong { font-size: 7px; }
