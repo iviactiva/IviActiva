@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Una bitácora para parar, observar lo que hoy está presente y convertirlo en una acción posible." />
+    <meta name="description" content="El espacio de Iveth Acevedo: escritura, coaching, REVOLUCIÓN y el podcast Memento Mori." />
     <meta name="theme-color" content="#fbfafc" />
-    <meta property="og:title" content="REVOLUCIÓN — Bitácora de escritura consciente" />
-    <meta property="og:description" content="Una bitácora para parar, observar lo que hoy está presente y convertirlo en una acción posible." />
+    <meta property="og:title" content="Iveth Acevedo — Escritura, coaching y podcast" />
+    <meta property="og:description" content="Un espacio de escritura, coaching y proyectos para frenar, mirar desde otro lugar y elegir cómo seguir." />
     <meta property="og:type" content="website" />
     <link rel="icon" href="./assets/favicon.svg" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./podcast.css" />
-    <title>REVOLUCIÓN — Bitácora de escritura consciente</title>
+    <link rel="stylesheet" href="./intro.css" />
+    <title>Iveth Acevedo — Escritura, coaching y podcast</title>
   </head>
   <body>
     <main>
       <header class="site-header" aria-label="Navegación principal">
-        <a class="brand-lockup" href="#inicio" aria-label="Iveth Acevedo, REVOLUCIÓN, ir al inicio">
+        <a class="brand-lockup" href="#inicio" aria-label="Iveth Acevedo, ir al inicio">
           <span class="personal-brand">
             <img src="./assets/iveth-acevedo-logo.png" alt="" width="122" height="88" />
             <span class="personal-brand-copy">
@@ -31,20 +32,53 @@
           </span>
         </a>
         <nav aria-label="Secciones">
-          <a href="#recorrido">El recorrido</a>
-          <a href="#muestra">Muestra</a>
+          <a href="#inicio">Sobre mí</a>
+          <a href="#revolucion">REVOLUCIÓN</a>
           <a href="#podcast">Podcast</a>
         </nav>
         <a class="header-cta" href="#muestra">Probarla</a>
       </header>
 
-      <section class="hero" id="inicio">
+      <section class="welcome" id="inicio" aria-labelledby="welcome-title">
+        <div class="welcome-inner">
+          <div class="welcome-photo-wrap">
+            <img
+              class="welcome-photo"
+              src="./assets/iveth-bienvenida.jpg"
+              alt="Iveth Acevedo en una librería, sosteniendo un libro"
+              width="360"
+              height="640"
+            />
+          </div>
+
+          <div class="welcome-copy">
+            <p class="eyebrow">Iveth Acevedo</p>
+            <h1 id="welcome-title">Hola, soy Iveth Acevedo.</h1>
+            <p class="welcome-intro">Les doy la bienvenida a este espacio.</p>
+            <p class="welcome-body">
+              Trabajo con palabras, preguntas y experiencias que invitan a frenar, mirar desde otro lugar y elegir cómo seguir.
+            </p>
+            <p class="welcome-body">
+              Acá van a encontrar proyectos nacidos de la escritura, el coaching y mi manera de mirar la vida: REVOLUCIÓN, una experiencia de escritura consciente, y MEMENTO MORI, mi podcast.
+            </p>
+
+            <div class="welcome-links">
+              <a class="button primary" href="#revolucion">Conocer REVOLUCIÓN <span aria-hidden="true">→</span></a>
+              <a class="button welcome-link-secondary" href="#podcast">Escuchar MEMENTO MORI <span aria-hidden="true">→</span></a>
+            </div>
+
+            <p class="welcome-slogan">Hay otra vida, <span>la que vos elijas.</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero" id="revolucion">
         <div class="hero-copy">
           <p class="eyebrow">Bitácora de escritura consciente</p>
-          <h1>
+          <h2 class="hero-heading">
             Hay algo que ya no te hace sentido.
             <span>Tal vez no necesites apurarte.</span>
-          </h1>
+          </h2>
           <p class="hero-text">
             REVOLUCIÓN es un recorrido para parar, observar lo que hoy está presente y transformar esa claridad en una acción posible.
           </p>
@@ -206,8 +240,8 @@
       </section>
 
       <footer>
-        <a class="brand" href="#inicio">REVOLUCIÓN<span>.</span></a>
-        <p>Una bitácora creada por Iveth Acevedo.</p>
+        <a class="brand" href="#inicio">IVETH ACEVEDO<span>.</span></a>
+        <p>Escritura, coaching y proyectos para mirar desde otro lugar.</p>
         <a href="https://www.instagram.com/iviactiva/" target="_blank" rel="noreferrer">@iviactiva ↗</a>
       </footer>
     </main>
